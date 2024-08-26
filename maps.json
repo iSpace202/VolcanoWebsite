@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Lucky Block Race",
+    "id": "a6331847-238f-4721-96ed-ede0ba7856dc",
+    "trailer": "https://www.youtube.com/watch?v=_S1FCo64jNY",
+    "type": "Minigame",
+    "price": "660",
+    "release_date": "2019-04-30",
+    "short_description": "Race with your friends in the fun-packed Lucky Block Race! The rules are simple; if you're the luckiest, then you're our winner!",
+    "long_description": "The classic we all love is here and is better than ever! Race with your friends in the fun-packed Lucky Block Race! The rules are simple; if you're the luckiest, then you're our winner!<br><br>+ Perfect minigame for a large group of friends!<br>+ Fully voice acted for the best immersion!<br>+ Custom mobs and sounds!<br>+ 16 free skins!",
+    "keyart_path": "images/products/Minecraft/LuckyBlockRace_MarketingKeyArt.jpg",
+    "screenshots": [
+      "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_0.jpg",
+      "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_1.jpg",
+      "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_2.jpg",
+      "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_3.jpg",
+      "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_4.jpg"
+    ]
+  }
+]
