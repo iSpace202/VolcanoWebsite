@@ -1,6 +1,7 @@
 [
   {
     "name": "Lucky Block Race",
+    "link_name": "lucky-block-race",
     "id": "a6331847-238f-4721-96ed-ede0ba7856dc",
     "trailer": "https://www.youtube.com/watch?v=_S1FCo64jNY",
     "type": "Minigame",
@@ -15,6 +16,42 @@
       "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_2.jpg",
       "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_3.jpg",
       "images/products/Minecraft/LuckyBlockRace_MarketingScreenshot_4.jpg"
+    ]
+  },
+  {
+    "name": "The Undying System",
+    "id": "100a1ae5-c3bc-4a33-994a-a2a2638e8157",
+    "trailer": "https://www.youtube.com/watch?v=jMESDwpY1D4",
+    "type": "Adventure",
+    "price": "830",
+    "release_date": "2019-06-25",
+    "short_description": "The company Brian works at decided to make some major changes which somehow led to him being an immortal imprisoned in The Undying System. Can you escape? Only the smart ones do!",
+    "long_description": "Oh no... What have you done NOW Brian?!<br>Welcome prisoner! The company Brian works at decided to make some major changes which somehow led to him being an immortal imprisoned in The Undying System. Can you escape? Only the smart ones do!<br><br>+ A prison break adventure<br>+ A great map for singleplayer & multiplayer!<br>+ Custom mobs and sounds!<br>+ 4 free skins!",
+    "keyart_path": "images/products/Minecraft/TheUndyingSystem_MarketingKeyArt.jpg",
+    "screenshots": [
+      "images/products/Minecraft/TheUndyingSystem_MarketingScreenshot_0.jpg",
+      "images/products/Minecraft/TheUndyingSystem_MarketingScreenshot_1.jpg",
+      "images/products/Minecraft/TheUndyingSystem_MarketingScreenshot_2.jpg",
+      "images/products/Minecraft/TheUndyingSystem_MarketingScreenshot_3.jpg",
+      "images/products/Minecraft/TheUndyingSystem_MarketingScreenshot_4.jpg"
+    ]
+  },
+  {
+    "name": "Days at Frostville",
+    "id": "6844b9f3-67c3-4caa-8d29-206a2520a8e0",
+    "trailer": "https://www.youtube.com/watch?v=MyyQOU-muZc",
+    "type": "Adventure",
+    "price": "990",
+    "release_date": "2019-11-10",
+    "short_description": "Stories of mystery hide in a once abandoned Frostville. The Shadow Prince rises, and it's time for him to feast. Discover the many secrets and stop evil from entering the village.",
+    "long_description": "Stories of mystery hide in a once abandoned Frostville. The Shadow Prince rises, and it's time for him to feast. Discover the many secrets and stop evil from entering the village.<br><br><br>+ A story-driven adventure map!<br>+ Custom characters and sounds!<br>+ A boss fight unlike any other!<br>+ Great for singleplayer & multiplayer!",
+    "keyart_path": "images/products/Minecraft/Frostville_MarketingKeyArt.jpg",
+    "screenshots": [
+      "images/products/Minecraft/Frostville_MarketingScreenshot_0.jpg",
+      "images/products/Minecraft/Frostville_MarketingScreenshot_1.jpg",
+      "images/products/Minecraft/Frostville_MarketingScreenshot_2.jpg",
+      "images/products/Minecraft/Frostville_MarketingScreenshot_3.jpg",
+      "images/products/Minecraft/Frostville_MarketingScreenshot_4.jpg"
     ]
   }
 ]
