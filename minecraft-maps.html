@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/branding/favicon.ico">
 
     <!-- Scripts -->
     <script defer
@@ -75,20 +76,35 @@
         <h1 class="display-5 fw-bold text-center">Minecraft Maps</h1>
         <p class="lead">We absolutely enjoy creating Minecraft maps! We've been designing maps for the Minecraft
             Marketplace for years, and all of our maps are playable on Minecraft Bedrock.</p>
-        <div class="row row-cols-1 row-cols-md-4 mb-3 text-center" id="mapsTable"></div>
+            <h3 class="mt-5 text-center" id="adventure-maps-h">Adventures</h3>
+            <div class="row row-cols-1 row-cols-md-4 mb-3 text-center" id="adventure-maps"></div>
+            <h3 class="mt-5 text-center" id="minigame-maps-h">Minigames</h3>
+            <div class="row row-cols-1 row-cols-md-4 mb-3 text-center" id="minigame-maps"></div>
+            <h3 class="mt-5 text-center" id="survival-spawn-maps-h">Survival Spawns</h3>
+            <div class="row row-cols-1 row-cols-md-4 mb-3 text-center" id="survival-spawn-maps"></div>
     </div>
 </section>
 
 
-<div class="modal" tabindex="-1" id="mapModal">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal fade" tabindex="-1" id="mapModal">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title"></h4>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            
             <div class="modal-body">
-                <div id="map-trailer"></div>
+                <div class="row">
+                    <div class="col">
+                <div id="map-trailer">
+                    <iframe width="100%" height="100%" allowfullscreen
+                            src="">
+                    </iframe>
+                </div>
+                <img class="d-bloc w-100" id="map-keyart"></img>
+            </div>
+                <div class="col">
                 <div id="map-screenshots">
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
@@ -124,12 +140,20 @@
                             <span class="visually-hidden">Next</span>
                         </button>
                     </div>
-                </div>
+                </div></div></div>
                 <p class="mt-3" id="map-description"></p>
             </div>
             <div class="modal-footer">
+                <p class="mt-auto d-inline">
+                    <img src="https://www.minecraft.net/content/dam/games/minecraft/marketplace/images/Minecraft_Desktop_1366_Minecoin.png"
+                         alt="Minecon">
+                <p class="lead" id="map-price"></p>
+                </p>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Get this map <i class="bi bi-box-arrow-up-right"></i></button>
+                <a class="btn btn-primary" id="map-link" href="" target="_blank" rel="noreferrer noopener">Get this map
+                    <i
+                            class="bi bi-box-arrow-up-right"></i>
+                </a>
             </div>
         </div>
     </div>

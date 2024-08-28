@@ -1,7 +1,11 @@
 ﻿<!DOCTYPE html>
 <head>
     <script>
-        window.location.href = "index.html";
+        const url = window.location.href;
+        if (url.includes("minecraft-maps")) {
+            window.location.href = "/minecraft-maps";
+        }
+        window.location.href = "/";
     </script>
     <title>404</title>
 </head>
