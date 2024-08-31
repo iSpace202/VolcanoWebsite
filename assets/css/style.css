@@ -11,3 +11,8 @@
   width: 100%;
   height: 100%;
 }
+
+hr {
+  background: linear-gradient(90deg, transparent, rgb(0, 51, 102), transparent);
+  height: 5px;
+}
