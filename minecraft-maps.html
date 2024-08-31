@@ -16,15 +16,15 @@
 
     <!-- Scripts -->
     <script defer
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"
-    ></script>
-    <script defer
             src="https://code.jquery.com/jquery-3.3.1.js"
             integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
     </script>
+    <script defer
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"
+    ></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script defer src="assets/js/script.js"></script>
@@ -85,7 +85,7 @@
     </div>
 </section>
 
-
+<!-- Map Modal -->
 <div class="modal fade" tabindex="-1" id="mapModal">
     <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
@@ -97,37 +97,17 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col">
-                <div id="map-trailer">
-                    <iframe width="100%" height="100%" allowfullscreen
-                            src="">
-                    </iframe>
+                <div class="ratio ratio-16x9" id="map-trailer">
+                        <iframe allowfullscreen src=""></iframe>
                 </div>
-                <img class="d-bloc w-100" id="map-keyart"></img>
+                <img class="d-bloc w-100" id="map-keyart" src="" alt="Map Key Art">
             </div>
                 <div class="col">
                 <div id="map-screenshots">
                     <div id="carouselExampleIndicators" class="carousel slide">
                         <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                    class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                    aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                    aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="images/products/Minecraft/Frostville_MarketingScreenshot_0.jpg"
-                                     class="d-bloc w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/products/Minecraft/Frostville_MarketingScreenshot_1.jpg"
-                                     class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="images/products/Minecraft/Frostville_MarketingScreenshot_2.jpg"
-                                     class="d-block w-100" alt="...">
-                            </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                                 data-bs-slide="prev">
@@ -145,7 +125,7 @@
             </div>
             <div class="modal-footer">
                 <p class="mt-auto d-inline">
-                    <img src="https://www.minecraft.net/content/dam/games/minecraft/marketplace/images/Minecraft_Desktop_1366_Minecoin.png"
+                    <img class="img-fluid mb-2" src="https://www.minecraft.net/content/dam/games/minecraft/marketplace/images/Minecraft_Desktop_1366_Minecoin.png"
                          alt="Minecon">
                 <p class="lead" id="map-price"></p>
                 </p>

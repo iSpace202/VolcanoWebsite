@@ -5,29 +5,21 @@ function makeCard(map_data) {
     const type = map_data["type"].replace(/"/g, "");
     const map_id = map_data["id"];
 
-    return '<div class="col">' +
-        '<div class="card text-bg-light mt-3">' +
-        '<img src=' + keyart + ' class="card-img-top" alt="...">' +
-        '<div class="card-body">' + '<h5 class="card-title">' + name + '</h5>' +
-         '<span class="badge bg-secondary">' + type + '</span>' + '<p class="card-text">' + description + '</p>' +
-        '<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mapModal" data-bs-map-id=' + map_id + '>Learn more <i class="bi bi-eye-fill"></i></button>' +
-        '</div>' + '</div>' + '</div>';
+    return `<div class="col"><div class="card text-bg-light mt-3"><img src=${keyart} class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">${name}</h5><span class="badge bg-secondary">${type}</span><p class="card-text">${description}</p><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#mapModal" data-bs-map-id=${map_id}>Learn more <i class="bi bi-eye-fill"></i></button></div></div></div>`;
 }
 
 function makeScreenshots(screenshots) {
     const screenshot_amount = screenshots.length;
 
-    let ss_html = '<div id="map-screenshot-carousel" class="carousel slide">' +
-        '<div class="carousel-indicators">'
+    let ss_html = '<div id="map-screenshot-carousel" class="carousel slide"><div class="carousel-indicators">';
     for (let i = 0; i < screenshot_amount; i++) {
-        ss_html += '<button type="button" data-bs-target="#map-screenshot-carousel" data-bs-slide-to=' + i + (i === 0 ? ' class="active" aria-current="true"' : '') + ' aria-label="Screenshot ' + (i + 1) + '"></button>'
+        ss_html += '<button type="button" data-bs-target="#map-screenshot-carousel" data-bs-slide-to="' + i + '"' + (i === 0 ? ' class="active" aria-current="true"' : '') + ' aria-label="Screenshot ' + (i + 1) + '"></button>';
     }
-    ss_html += '</div>' +
-        '<div class="carousel-inner">'
+    ss_html += '</div><div class="carousel-inner">';
     for (let i = 0; i < screenshot_amount; i++) {
-        ss_html += '<div class=' + (i === 0 ? '"carousel-item active"' : '"carousel-item"') + '>' +
-            '<img src=' + screenshots[i] + ' class="d-block w-100" alt="Screenshot ' + (i + 1) + '">' +
-            '</div>'
+        ss_html += '<div class="' + (i === 0 ? 'carousel-item active' : 'carousel-item') + '">' +
+            '<img src="' + screenshots[i] + '" class="d-block w-100" alt="Screenshot ' + (i + 1) + '">' +
+            '</div>';
     }
 
     ss_html += '</div>' +
@@ -39,10 +31,11 @@ function makeScreenshots(screenshots) {
         '<span class="carousel-control-next-icon" aria-hidden="true"></span>' +
         '<span class="visually-hidden">Next</span>' +
         '</button>' +
-        '</div>'
+        '</div>';
 
     return ss_html;
 }
+
 
 let maps;
 document.addEventListener("DOMContentLoaded", function () {
@@ -105,14 +98,16 @@ if (mapModal) {
         }
     })
     mapModal.addEventListener('hide.bs.modal', event => {
-
+        document.title = "Minecraft Maps";
         history.replaceState(null, null, '/minecraft-maps');
     })
-}
+    window.addEventListener("popstate", event => {
+        console.log('WHAT THE FUCK');
+        console.log(typeof mapModal);
 
-window.addEventListener("popstate", event => {
-    if (mapModal) {
-        document.title = "Minecraft Maps";
-        mapModal.hide();
-    }
-})
+        if (mapModal) {
+            document.title = "Minecraft Maps";
+            mapModal.hide();
+        }
+    })
+}

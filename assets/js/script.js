@@ -8,22 +8,22 @@ document.addEventListener("DOMContentLoaded", function () {
         // Set active header
         const url_name = window.location.href;
         {
-            let header_elem;
+            let header_elem; // Initialized down below
 
             if (url_name.includes("games")) {
-                header_elem = document.getElementById("header-games");
+                header_elem = $("#header-games");
             }
             else if (url_name.includes("minecraft-maps")) {
-                header_elem = document.getElementById("header-minecraft-maps");
+                header_elem = $("#header-minecraft-maps");
             }
             else if (url_name.includes("about")) {
-                header_elem = document.getElementById("header-about");
+                header_elem = $("#header-about");
             }
             else if (url_name.includes("contact-us")) {
-                header_elem = document.getElementById("header-contact-us");
+                header_elem = $("#header-contact-us");
             }
             else {
-                header_elem = document.getElementById("header-home");
+                header_elem = $("#header-home");
             }
             header_elem.classList.add("active");
             header_elem.setAttribute("aria-current", "page");
